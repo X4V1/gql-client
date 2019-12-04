@@ -21,3 +21,7 @@ Run `npm run graphql:coverage` to find out how many times types and fields are u
 ## Visual representation of the Schema
 
 https://apis.guru/graphql-voyager/ allow you to paste your schema and get a visual representation.
+
+## Testing
+
+For testing purpose there is an easy way to start a fake server. Simply run `npm run graphql:serve`

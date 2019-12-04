@@ -11,11 +11,11 @@
       {
         "kind": "OBJECT",
         "name": "Query",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "identity",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -27,7 +27,7 @@
           },
           {
             "name": "ready",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -39,7 +39,7 @@
           },
           {
             "name": "health",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -51,7 +51,7 @@
           },
           {
             "name": "config",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -67,11 +67,11 @@
           },
           {
             "name": "requests",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "filter",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "FilterRequestInputType",
@@ -81,7 +81,7 @@
               },
               {
                 "name": "pagination",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "PaginationInputType",
@@ -91,7 +91,7 @@
               },
               {
                 "name": "sorting",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "ENUM",
                   "name": "RequestOrderBy",
@@ -114,11 +114,11 @@
           },
           {
             "name": "requestActionItems",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "filter",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "FilterRequestActionInputType",
@@ -128,7 +128,7 @@
               },
               {
                 "name": "pagination",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "PaginationInputType",
@@ -138,7 +138,7 @@
               },
               {
                 "name": "sorting",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "ENUM",
                   "name": "RequestActionItemOrderBy",
@@ -161,11 +161,11 @@
           },
           {
             "name": "request",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "requestIdentifier",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -179,7 +179,7 @@
               },
               {
                 "name": "customerLanguage",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -202,11 +202,11 @@
           },
           {
             "name": "requestActionItem",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "requestActionItemIdentifier",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -236,11 +236,11 @@
       {
         "kind": "OBJECT",
         "name": "IdentityType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "msVersion",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -256,7 +256,7 @@
           },
           {
             "name": "hostPort",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -272,7 +272,7 @@
           },
           {
             "name": "hostName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -288,7 +288,7 @@
           },
           {
             "name": "clusterName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -300,7 +300,7 @@
           },
           {
             "name": "serverName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -316,7 +316,7 @@
           },
           {
             "name": "dateTime",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -332,7 +332,7 @@
           },
           {
             "name": "message",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -348,7 +348,7 @@
           },
           {
             "name": "environment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -391,7 +391,7 @@
       {
         "kind": "SCALAR",
         "name": "Date",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -411,11 +411,11 @@
       {
         "kind": "OBJECT",
         "name": "HealthType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "status",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -431,7 +431,7 @@
           },
           {
             "name": "details",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -450,20 +450,20 @@
       {
         "kind": "ENUM",
         "name": "HealthStatusType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "UP",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "DOWN",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -473,11 +473,11 @@
       {
         "kind": "OBJECT",
         "name": "HealthDetailsType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "graphQL",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -493,7 +493,7 @@
           },
           {
             "name": "graphiQL",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -509,7 +509,7 @@
           },
           {
             "name": "bciCase",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -525,7 +525,7 @@
           },
           {
             "name": "requestEntityService",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -541,7 +541,7 @@
           },
           {
             "name": "requestOrchestratedTaskService",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -557,7 +557,7 @@
           },
           {
             "name": "requestActionItemOrchestratedTaskService",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -580,11 +580,11 @@
       {
         "kind": "OBJECT",
         "name": "ConfigurationType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "environment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -600,7 +600,7 @@
           },
           {
             "name": "logging",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -616,7 +616,7 @@
           },
           {
             "name": "express",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -632,7 +632,7 @@
           },
           {
             "name": "graphQL",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -648,7 +648,7 @@
           },
           {
             "name": "rqmClient",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -664,7 +664,7 @@
           },
           {
             "name": "bciClient",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -680,7 +680,7 @@
           },
           {
             "name": "securityLayer",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -703,15 +703,15 @@
       {
         "kind": "OBJECT",
         "name": "LoggingType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "transports",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "type",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "ENUM",
                   "name": "TransportEnumType",
@@ -745,20 +745,20 @@
       {
         "kind": "ENUM",
         "name": "TransportEnumType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "File",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "Console",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -768,11 +768,11 @@
       {
         "kind": "OBJECT",
         "name": "TransportType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "enabled",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -788,7 +788,7 @@
           },
           {
             "name": "minLevel",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -804,7 +804,7 @@
           },
           {
             "name": "transport",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -820,7 +820,7 @@
           },
           {
             "name": "format",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "ENUM",
@@ -832,7 +832,7 @@
           },
           {
             "name": "fileName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -844,7 +844,7 @@
           },
           {
             "name": "dirName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -856,7 +856,7 @@
           },
           {
             "name": "maxFiles",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -868,7 +868,7 @@
           },
           {
             "name": "maxSize",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -880,7 +880,7 @@
           },
           {
             "name": "zippedArchive",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -899,20 +899,20 @@
       {
         "kind": "ENUM",
         "name": "FormatType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "readable",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "fluentd",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -922,11 +922,11 @@
       {
         "kind": "OBJECT",
         "name": "ExpressType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "bodyLimit",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -945,11 +945,11 @@
       {
         "kind": "OBJECT",
         "name": "GraphQLType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "graphQLPort",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -965,7 +965,7 @@
           },
           {
             "name": "graphQLDebug",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -977,7 +977,7 @@
           },
           {
             "name": "graphQLTracing",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -989,7 +989,7 @@
           },
           {
             "name": "graphQLIntrospection",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -1001,7 +1001,7 @@
           },
           {
             "name": "graphQLPlayground",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -1013,7 +1013,7 @@
           },
           {
             "name": "graphiQLPort",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1036,11 +1036,11 @@
       {
         "kind": "OBJECT",
         "name": "RqmClientType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "esUrl",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1056,7 +1056,7 @@
           },
           {
             "name": "otsUrl",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1072,7 +1072,7 @@
           },
           {
             "name": "otsRequestActionItemUrl",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1088,7 +1088,7 @@
           },
           {
             "name": "timeoutInMillis",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1111,11 +1111,11 @@
       {
         "kind": "OBJECT",
         "name": "BciClientType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "bciUrl",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1131,7 +1131,7 @@
           },
           {
             "name": "timeoutInMillis",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1154,11 +1154,11 @@
       {
         "kind": "OBJECT",
         "name": "SecurityType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "enabled",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1174,7 +1174,7 @@
           },
           {
             "name": "apiVisibility",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -1193,11 +1193,11 @@
       {
         "kind": "OBJECT",
         "name": "ApiVisibilityType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "originsPrefixes",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1213,7 +1213,7 @@
           },
           {
             "name": "originRegexIntranet",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1236,12 +1236,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "FilterRequestInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "requestId",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "RequestIdentifierInputType",
@@ -1251,7 +1251,7 @@
           },
           {
             "name": "customerLanguage",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "ENUM",
               "name": "CustomerLanguage",
@@ -1267,12 +1267,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "RequestIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -1286,7 +1286,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -1296,7 +1296,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -1322,12 +1322,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "CodeValueInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "codeSystem",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -1337,7 +1337,7 @@
           },
           {
             "name": "codeSystemVersion",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -1347,7 +1347,7 @@
           },
           {
             "name": "codeDescription",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -1357,7 +1357,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -1371,7 +1371,7 @@
           },
           {
             "name": "context",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -1381,7 +1381,7 @@
           },
           {
             "name": "valueDescription",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "NameInputType",
@@ -1397,12 +1397,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "NameInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "defaultName",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -1416,7 +1416,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -1426,7 +1426,7 @@
           },
           {
             "name": "languageName",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "LIST",
               "name": null,
@@ -1446,12 +1446,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "LabelInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "text",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -1461,7 +1461,7 @@
           },
           {
             "name": "language",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -1481,12 +1481,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "LanguageCodeIsoAlpha2InputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "alpha2Code",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -1500,7 +1500,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -1516,26 +1516,26 @@
       {
         "kind": "ENUM",
         "name": "CustomerLanguage",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "FR",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "NL",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "DE",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -1545,12 +1545,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "PaginationInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "after",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -1560,7 +1560,7 @@
           },
           {
             "name": "first",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "Int",
@@ -1576,20 +1576,20 @@
       {
         "kind": "ENUM",
         "name": "RequestOrderBy",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "ID_ASC",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "ID_DESC",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -1599,11 +1599,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestPageResultCursor",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "edges",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1623,7 +1623,7 @@
           },
           {
             "name": "pageInfo",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1639,7 +1639,7 @@
           },
           {
             "name": "totalCount",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1662,11 +1662,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestEdge",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "cursor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1682,7 +1682,7 @@
           },
           {
             "name": "node",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1705,11 +1705,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "title",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1725,7 +1725,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1741,7 +1741,7 @@
           },
           {
             "name": "serviceLevel",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1757,7 +1757,7 @@
           },
           {
             "name": "requestorDescription",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -1769,7 +1769,7 @@
           },
           {
             "name": "requestorExpectation",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -1781,7 +1781,7 @@
           },
           {
             "name": "estimatedResolutionDate",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1797,7 +1797,7 @@
           },
           {
             "name": "requestorComment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -1813,7 +1813,7 @@
           },
           {
             "name": "internalComment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -1829,7 +1829,7 @@
           },
           {
             "name": "numberOfTimesReopened",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1845,11 +1845,11 @@
           },
           {
             "name": "role",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "roleKind",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "ENUM",
                   "name": "RoleKind",
@@ -1876,7 +1876,7 @@
           },
           {
             "name": "identifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1896,7 +1896,7 @@
           },
           {
             "name": "relationship",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -1912,7 +1912,7 @@
           },
           {
             "name": "charVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -1928,7 +1928,7 @@
           },
           {
             "name": "preferredChannelIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -1940,7 +1940,7 @@
           },
           {
             "name": "resolution",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -1956,7 +1956,7 @@
           },
           {
             "name": "internalStatus",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -1972,7 +1972,7 @@
           },
           {
             "name": "actionItem",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -1988,7 +1988,7 @@
           },
           {
             "name": "externalStatus",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2004,7 +2004,7 @@
           },
           {
             "name": "contactReason",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2016,7 +2016,7 @@
           },
           {
             "name": "creationDate",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2032,7 +2032,7 @@
           },
           {
             "name": "metadata",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2044,7 +2044,7 @@
           },
           {
             "name": "createdFromBusinessCommunicationIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2060,7 +2060,7 @@
           },
           {
             "name": "attachmentPath",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -2076,7 +2076,7 @@
           },
           {
             "name": "nonValidRequestorInputCharVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2088,7 +2088,7 @@
           },
           {
             "name": "requestorLanguage",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2107,11 +2107,11 @@
       {
         "kind": "OBJECT",
         "name": "RQMCodeValueType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "codeSystem",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -2123,7 +2123,7 @@
           },
           {
             "name": "codeSystemVersion",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -2135,7 +2135,7 @@
           },
           {
             "name": "codeDescription",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -2147,7 +2147,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2163,7 +2163,7 @@
           },
           {
             "name": "context",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -2175,7 +2175,7 @@
           },
           {
             "name": "valueDescription",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2194,11 +2194,11 @@
       {
         "kind": "OBJECT",
         "name": "RQMNameType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "defaultName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2214,7 +2214,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2226,7 +2226,7 @@
           },
           {
             "name": "languageName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -2249,11 +2249,11 @@
       {
         "kind": "OBJECT",
         "name": "RQMLabelType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "text",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -2265,7 +2265,7 @@
           },
           {
             "name": "language",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2288,11 +2288,11 @@
       {
         "kind": "OBJECT",
         "name": "LanguageCodeIsoAlpha2Type",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "alpha2Code",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2308,7 +2308,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2327,11 +2327,11 @@
       {
         "kind": "OBJECT",
         "name": "CommentType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "comment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2347,7 +2347,7 @@
           },
           {
             "name": "language",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2363,7 +2363,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2379,7 +2379,7 @@
           },
           {
             "name": "subject",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -2402,26 +2402,26 @@
       {
         "kind": "ENUM",
         "name": "RoleKind",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "AssignedTo",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "RequestOwner",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "RequestedFor",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -2431,11 +2431,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestRoleType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "partyRoleIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2451,7 +2451,7 @@
           },
           {
             "name": "name",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2474,11 +2474,11 @@
       {
         "kind": "OBJECT",
         "name": "ChoicePartyRoleIdentifierInRequestType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "internalEmployeeIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2490,7 +2490,7 @@
           },
           {
             "name": "partnerEmployeeIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2502,7 +2502,7 @@
           },
           {
             "name": "organisationIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2514,7 +2514,7 @@
           },
           {
             "name": "customerIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2526,7 +2526,7 @@
           },
           {
             "name": "personIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2538,7 +2538,7 @@
           },
           {
             "name": "organisationalUnitIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2550,7 +2550,7 @@
           },
           {
             "name": "externalEmployeeIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2562,7 +2562,7 @@
           },
           {
             "name": "registeredEndUserIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2574,7 +2574,7 @@
           },
           {
             "name": "contactIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2593,11 +2593,11 @@
       {
         "kind": "OBJECT",
         "name": "InternalEmployeeIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2613,7 +2613,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2625,7 +2625,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2644,11 +2644,11 @@
       {
         "kind": "OBJECT",
         "name": "PartnerEmployeeIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2664,7 +2664,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2680,7 +2680,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2703,11 +2703,11 @@
       {
         "kind": "OBJECT",
         "name": "OrganisationIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2723,7 +2723,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2735,7 +2735,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2754,11 +2754,11 @@
       {
         "kind": "OBJECT",
         "name": "CustomerIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2774,7 +2774,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2786,7 +2786,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2805,11 +2805,11 @@
       {
         "kind": "OBJECT",
         "name": "PersonIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2825,7 +2825,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2837,7 +2837,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2856,11 +2856,11 @@
       {
         "kind": "OBJECT",
         "name": "OrganisationalUnitIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2876,7 +2876,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2892,7 +2892,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2915,11 +2915,11 @@
       {
         "kind": "OBJECT",
         "name": "ExternalEmployeeIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2935,7 +2935,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2947,7 +2947,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2966,11 +2966,11 @@
       {
         "kind": "OBJECT",
         "name": "RegisteredEndUserIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2986,7 +2986,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -2998,7 +2998,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3017,11 +3017,11 @@
       {
         "kind": "OBJECT",
         "name": "ContactIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3037,7 +3037,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3049,7 +3049,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3068,11 +3068,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3088,7 +3088,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3104,7 +3104,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3127,11 +3127,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestRelationshipType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "name",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3147,7 +3147,7 @@
           },
           {
             "name": "requestIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3170,11 +3170,11 @@
       {
         "kind": "OBJECT",
         "name": "CharacteristicValueType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "characteristicName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3190,7 +3190,7 @@
           },
           {
             "name": "characteristicDescription",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -3202,7 +3202,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -3214,7 +3214,7 @@
           },
           {
             "name": "valueRange",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3226,7 +3226,7 @@
           },
           {
             "name": "unitOfMeasure",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3238,7 +3238,7 @@
           },
           {
             "name": "valueDescription",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -3250,7 +3250,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3262,7 +3262,7 @@
           },
           {
             "name": "subCharVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3285,11 +3285,11 @@
       {
         "kind": "OBJECT",
         "name": "IntervalType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "low",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3305,7 +3305,7 @@
           },
           {
             "name": "high",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3328,11 +3328,11 @@
       {
         "kind": "OBJECT",
         "name": "TimeIntervalType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "startTimeStamp",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3348,7 +3348,7 @@
           },
           {
             "name": "endTimeStamp",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3371,11 +3371,11 @@
       {
         "kind": "OBJECT",
         "name": "ChannelIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3391,7 +3391,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3407,7 +3407,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3430,11 +3430,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestResolutionType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "code",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3450,7 +3450,7 @@
           },
           {
             "name": "detail",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3466,7 +3466,7 @@
           },
           {
             "name": "resolvedByBillingDocumentIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3482,7 +3482,7 @@
           },
           {
             "name": "promiseToPayIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3494,7 +3494,7 @@
           },
           {
             "name": "installmentPlanIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3506,7 +3506,7 @@
           },
           {
             "name": "requestRootCause",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3518,7 +3518,7 @@
           },
           {
             "name": "attachmentPath",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3541,11 +3541,11 @@
       {
         "kind": "OBJECT",
         "name": "ChoiceBillingDocumentIdentifierInRequestType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "invoiceBillingDocumentIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3557,7 +3557,7 @@
           },
           {
             "name": "creditNoteBillingDocumentIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3569,7 +3569,7 @@
           },
           {
             "name": "billingDocumentIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3588,11 +3588,11 @@
       {
         "kind": "OBJECT",
         "name": "BillingDocumentIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3608,7 +3608,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3624,7 +3624,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3647,11 +3647,11 @@
       {
         "kind": "OBJECT",
         "name": "PromiseToPayIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3667,7 +3667,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3679,7 +3679,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3698,11 +3698,11 @@
       {
         "kind": "OBJECT",
         "name": "InstallmentPlanIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3718,7 +3718,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3734,7 +3734,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3757,11 +3757,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestRootCauseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "code",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3773,7 +3773,7 @@
           },
           {
             "name": "detail",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3796,11 +3796,11 @@
       {
         "kind": "OBJECT",
         "name": "StatusType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "code",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3816,7 +3816,7 @@
           },
           {
             "name": "description",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -3828,7 +3828,7 @@
           },
           {
             "name": "reason",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3844,7 +3844,7 @@
           },
           {
             "name": "comment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3860,7 +3860,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3879,11 +3879,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestActionItemType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "status",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3899,7 +3899,7 @@
           },
           {
             "name": "identifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3919,7 +3919,7 @@
           },
           {
             "name": "description",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -3935,7 +3935,7 @@
           },
           {
             "name": "planActionDate",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -3947,7 +3947,7 @@
           },
           {
             "name": "creationDate",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -3959,7 +3959,7 @@
           },
           {
             "name": "lastChangeDate",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -3971,7 +3971,7 @@
           },
           {
             "name": "businessInteractionIdentifierItem",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -3990,11 +3990,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestActionItemIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4010,7 +4010,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4026,7 +4026,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4049,11 +4049,11 @@
       {
         "kind": "OBJECT",
         "name": "ChoiceBusinessInteractionIdentifierItemInRequestType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "customerOrderIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4065,7 +4065,7 @@
           },
           {
             "name": "incidentIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4077,11 +4077,11 @@
           },
           {
             "name": "complaintIdentifier",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "unionIdentifierType",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "ENUM",
                   "name": "UnionIdentifierType",
@@ -4100,7 +4100,7 @@
           },
           {
             "name": "leadIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4119,11 +4119,11 @@
       {
         "kind": "OBJECT",
         "name": "CustomerOrderIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4139,7 +4139,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4151,7 +4151,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4170,11 +4170,11 @@
       {
         "kind": "OBJECT",
         "name": "IncidentIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4190,7 +4190,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4202,7 +4202,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4221,20 +4221,20 @@
       {
         "kind": "ENUM",
         "name": "UnionIdentifierType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "IDENTIFIER",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "TYPE",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -4244,7 +4244,7 @@
       {
         "kind": "UNION",
         "name": "ComplaintIdentifierUnion",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -4265,11 +4265,11 @@
       {
         "kind": "OBJECT",
         "name": "ComplaintIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4285,7 +4285,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4297,7 +4297,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4316,11 +4316,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "targetResolutionTime",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4332,7 +4332,7 @@
           },
           {
             "name": "targetTechnicalResolutionTime",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4344,7 +4344,7 @@
           },
           {
             "name": "lastUpdateDate",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4356,7 +4356,7 @@
           },
           {
             "name": "isClosedOnCreate",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4368,7 +4368,7 @@
           },
           {
             "name": "isValid",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4380,7 +4380,7 @@
           },
           {
             "name": "wasReopened",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4392,7 +4392,7 @@
           },
           {
             "name": "interactionRole",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4408,7 +4408,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4424,7 +4424,7 @@
           },
           {
             "name": "status",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4436,7 +4436,7 @@
           },
           {
             "name": "priority",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4448,7 +4448,7 @@
           },
           {
             "name": "title",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4464,7 +4464,7 @@
           },
           {
             "name": "description",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4476,7 +4476,7 @@
           },
           {
             "name": "comment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4492,7 +4492,7 @@
           },
           {
             "name": "duration",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4508,7 +4508,7 @@
           },
           {
             "name": "closureCode",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4524,7 +4524,7 @@
           },
           {
             "name": "communicationLanguage",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4536,7 +4536,7 @@
           },
           {
             "name": "relationship",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4548,7 +4548,7 @@
           },
           {
             "name": "identifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4564,7 +4564,7 @@
           },
           {
             "name": "item",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4580,7 +4580,7 @@
           },
           {
             "name": "charVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4596,7 +4596,7 @@
           },
           {
             "name": "caseClassification",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4616,7 +4616,7 @@
           },
           {
             "name": "channelIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4632,7 +4632,7 @@
           },
           {
             "name": "assignedWorkforce",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4651,11 +4651,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseRoleType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4671,7 +4671,7 @@
           },
           {
             "name": "partyRole",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4687,7 +4687,7 @@
           },
           {
             "name": "organisationalUnitIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4699,7 +4699,7 @@
           },
           {
             "name": "contactMediumIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4715,7 +4715,7 @@
           },
           {
             "name": "logicalResourceIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4738,11 +4738,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICodeValueType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "codeSystem",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4754,7 +4754,7 @@
           },
           {
             "name": "codeSystemVersion",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4766,7 +4766,7 @@
           },
           {
             "name": "codeDescription",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4778,7 +4778,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4794,7 +4794,7 @@
           },
           {
             "name": "context",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4806,7 +4806,7 @@
           },
           {
             "name": "valueDescription",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4825,11 +4825,11 @@
       {
         "kind": "OBJECT",
         "name": "BCINameType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "defaultName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4845,7 +4845,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4857,7 +4857,7 @@
           },
           {
             "name": "languageName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -4880,11 +4880,11 @@
       {
         "kind": "OBJECT",
         "name": "BCILabelType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "text",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -4896,7 +4896,7 @@
           },
           {
             "name": "language",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4919,11 +4919,11 @@
       {
         "kind": "OBJECT",
         "name": "BCILanguageCodeISOAlpha2Type",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "alpha2Code",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4939,7 +4939,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -4958,11 +4958,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIOrganisationalUnitIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4978,7 +4978,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4994,7 +4994,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5017,11 +5017,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChoiceContactMediumIdentifierInCaseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "EMailContactIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5037,7 +5037,7 @@
           },
           {
             "name": "phoneContactIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5053,7 +5053,7 @@
           },
           {
             "name": "postalContactIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5076,11 +5076,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIEMailContactIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5096,7 +5096,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5108,7 +5108,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5127,11 +5127,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIPhoneContactIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5147,7 +5147,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5159,7 +5159,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5178,11 +5178,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIPostalContactIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5198,7 +5198,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5210,7 +5210,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5229,11 +5229,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChoiceLogicalResourceIdentifierInCaseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "applicationIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5256,11 +5256,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIApplicationIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5276,7 +5276,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5288,7 +5288,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5307,11 +5307,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIStatusType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "code",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5327,7 +5327,7 @@
           },
           {
             "name": "description",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5339,7 +5339,7 @@
           },
           {
             "name": "reason",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -5355,7 +5355,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5374,11 +5374,11 @@
       {
         "kind": "OBJECT",
         "name": "BCITimeIntervalType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "startTimeStamp",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5394,7 +5394,7 @@
           },
           {
             "name": "endTimeStamp",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -5413,11 +5413,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICommentType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "comment",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5433,7 +5433,7 @@
           },
           {
             "name": "language",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5449,7 +5449,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5472,11 +5472,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseRelationshipType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5499,11 +5499,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5519,7 +5519,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5535,7 +5535,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5558,11 +5558,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseItemType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "identifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5589,11 +5589,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseItemIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5609,7 +5609,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5625,7 +5625,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5648,11 +5648,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseCharValType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "name",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5668,7 +5668,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5684,7 +5684,7 @@
           },
           {
             "name": "valueRange",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5696,7 +5696,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5715,11 +5715,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIIntervalType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "low",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5735,7 +5735,7 @@
           },
           {
             "name": "high",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5758,11 +5758,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICaseClassificationType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "classification",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5785,11 +5785,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChoiceChannelIdentifierInCaseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "channelIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5805,7 +5805,7 @@
           },
           {
             "name": "salesChannelIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5828,11 +5828,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChannelIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5848,7 +5848,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5864,7 +5864,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5887,11 +5887,11 @@
       {
         "kind": "OBJECT",
         "name": "BCISalesChannelIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5907,7 +5907,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5919,7 +5919,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -5938,11 +5938,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChoiceAssignedWorkforceForCaseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "workforceQueueIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5958,7 +5958,7 @@
           },
           {
             "name": "employeeIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -5981,11 +5981,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIWorkforceQueueIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6001,7 +6001,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6017,7 +6017,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6040,11 +6040,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIEmployeeIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6060,7 +6060,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6072,7 +6072,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6091,11 +6091,11 @@
       {
         "kind": "OBJECT",
         "name": "LeadIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6111,7 +6111,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6127,7 +6127,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6150,11 +6150,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestContactReasonType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "domain",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6166,7 +6166,7 @@
           },
           {
             "name": "productType",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6178,7 +6178,7 @@
           },
           {
             "name": "contactReasonCode",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6197,11 +6197,11 @@
       {
         "kind": "OBJECT",
         "name": "MetadataType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "auditTrail",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6220,11 +6220,11 @@
       {
         "kind": "OBJECT",
         "name": "AuditTrailType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "transaction",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6251,11 +6251,11 @@
       {
         "kind": "OBJECT",
         "name": "TransactionType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6271,7 +6271,7 @@
           },
           {
             "name": "date",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6287,7 +6287,7 @@
           },
           {
             "name": "reason",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -6303,7 +6303,7 @@
           },
           {
             "name": "applicationIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6315,7 +6315,7 @@
           },
           {
             "name": "committedBy",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6334,11 +6334,11 @@
       {
         "kind": "OBJECT",
         "name": "ApplicationIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6354,7 +6354,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6366,7 +6366,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6385,11 +6385,11 @@
       {
         "kind": "OBJECT",
         "name": "ChoicePartyRoleIdentifierInDataManagementType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "employeeIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6401,7 +6401,7 @@
           },
           {
             "name": "registeredEndUserIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6420,11 +6420,11 @@
       {
         "kind": "OBJECT",
         "name": "EmployeeIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6440,7 +6440,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6452,7 +6452,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6471,11 +6471,11 @@
       {
         "kind": "OBJECT",
         "name": "BusinessCommunicationIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6491,7 +6491,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6503,7 +6503,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -6522,11 +6522,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestNonValidRequestorInputType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "charVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -6549,11 +6549,11 @@
       {
         "kind": "OBJECT",
         "name": "PageInfo",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "endCursor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -6565,7 +6565,7 @@
           },
           {
             "name": "hasNextPage",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6588,12 +6588,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "FilterRequestActionInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "requestActionItemId",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "RequestActionItemIdentifierInputType",
@@ -6603,7 +6603,7 @@
           },
           {
             "name": "customerLanguage",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "ENUM",
               "name": "CustomerLanguage",
@@ -6619,12 +6619,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "RequestActionItemIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -6638,7 +6638,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -6648,7 +6648,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -6664,20 +6664,20 @@
       {
         "kind": "ENUM",
         "name": "RequestActionItemOrderBy",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "ID_ASC",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "ID_DESC",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -6687,11 +6687,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestActionItemPageResultCursor",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "edges",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6711,7 +6711,7 @@
           },
           {
             "name": "pageInfo",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6727,7 +6727,7 @@
           },
           {
             "name": "totalCount",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6750,11 +6750,11 @@
       {
         "kind": "OBJECT",
         "name": "RequestActionItemEdge",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "cursor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6770,7 +6770,7 @@
           },
           {
             "name": "node",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -6793,15 +6793,15 @@
       {
         "kind": "OBJECT",
         "name": "Mutation",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "submitRequest",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "partyIdentifier",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -6815,7 +6815,7 @@
               },
               {
                 "name": "requestorDescription",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -6829,7 +6829,7 @@
               },
               {
                 "name": "type",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "CodeValueInputType",
@@ -6839,7 +6839,7 @@
               },
               {
                 "name": "serviceLevel",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "CodeValueInputType",
@@ -6849,7 +6849,7 @@
               },
               {
                 "name": "contactReason",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "RequestContactReasonInputType",
@@ -6859,7 +6859,7 @@
               },
               {
                 "name": "requestorLanguage",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "LanguageCodeIsoAlpha2InputType",
@@ -6890,11 +6890,11 @@
           },
           {
             "name": "changeAgentRole",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "requestIdentifier",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -6908,7 +6908,7 @@
               },
               {
                 "name": "agentId",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -6922,7 +6922,7 @@
               },
               {
                 "name": "role",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "ENUM",
                   "name": "RoleKind",
@@ -6941,11 +6941,11 @@
           },
           {
             "name": "submitRequestActionItem",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "requestIdentifier",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -6959,7 +6959,7 @@
               },
               {
                 "name": "businessInteractionIdentifierItem",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -6994,11 +6994,11 @@
           },
           {
             "name": "closeRequestActionItem",
-            "description": null,
+            "description": "",
             "args": [
               {
                 "name": "requestActionItemIdentifier",
-                "description": null,
+                "description": "",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -7021,7 +7021,7 @@
           },
           {
             "name": "reSeed",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -7040,12 +7040,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "ChoicePartyIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "partyKind",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -7059,7 +7059,7 @@
           },
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -7073,7 +7073,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7083,7 +7083,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7099,26 +7099,26 @@
       {
         "kind": "ENUM",
         "name": "PartyKind",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "Organisation",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "Customer",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "Person",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -7128,12 +7128,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "RequestContactReasonInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "domain",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7143,7 +7143,7 @@
           },
           {
             "name": "productType",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7153,7 +7153,7 @@
           },
           {
             "name": "contactReasonCode",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7169,12 +7169,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "AgentIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "partyKind",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -7188,7 +7188,7 @@
           },
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -7202,7 +7202,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7212,7 +7212,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7228,20 +7228,20 @@
       {
         "kind": "ENUM",
         "name": "AgentKind",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "InternalEmployee",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "ExternalEmployee",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -7251,12 +7251,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "ChoiceBusinessInteractionIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "businessInteractionKind",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -7270,7 +7270,7 @@
           },
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -7284,7 +7284,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7294,7 +7294,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -7310,32 +7310,32 @@
       {
         "kind": "ENUM",
         "name": "BusinessInteractionKind",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "CustomerOrder",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "Incident",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "Complaint",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "Lead",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -8141,11 +8141,11 @@
       {
         "kind": "OBJECT",
         "name": "AmountType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "amount",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8161,7 +8161,7 @@
           },
           {
             "name": "unitOfMeasure",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8194,11 +8194,11 @@
       {
         "kind": "OBJECT",
         "name": "AppointmentIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8214,7 +8214,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8226,7 +8226,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8245,11 +8245,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChoiceBusinessInteractionInCaseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "opportunityIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8265,7 +8265,7 @@
           },
           {
             "name": "customerProjectIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8281,7 +8281,7 @@
           },
           {
             "name": "taskIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8297,7 +8297,7 @@
           },
           {
             "name": "workOrderIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8313,7 +8313,7 @@
           },
           {
             "name": "provisioningOrderIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8329,7 +8329,7 @@
           },
           {
             "name": "caseIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8345,7 +8345,7 @@
           },
           {
             "name": "customerOrderIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8368,11 +8368,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIOpportunityIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8388,7 +8388,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8404,7 +8404,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8427,11 +8427,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICustomerProjectIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8447,7 +8447,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8463,7 +8463,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8486,11 +8486,11 @@
       {
         "kind": "OBJECT",
         "name": "BCITaskIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "noop",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -8509,11 +8509,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIWorkOrderIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8529,7 +8529,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8541,7 +8541,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8560,11 +8560,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIProvisioningOrderIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8580,7 +8580,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8592,7 +8592,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8611,11 +8611,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICustomerOrderIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8631,7 +8631,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8643,7 +8643,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8662,11 +8662,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChoicePartyIdentifierInPartyContactType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "personIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8682,7 +8682,7 @@
           },
           {
             "name": "organisationIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8705,11 +8705,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIPersonIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8725,7 +8725,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8737,7 +8737,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8760,11 +8760,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIOrganisationIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8780,7 +8780,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8792,7 +8792,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8811,11 +8811,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIChoicePartyRoleInCaseType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "employeeIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8831,7 +8831,7 @@
           },
           {
             "name": "customerIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8847,7 +8847,7 @@
           },
           {
             "name": "registeredEndUserIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8863,7 +8863,7 @@
           },
           {
             "name": "visitorIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8879,7 +8879,7 @@
           },
           {
             "name": "serviceDeskPartnerIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8902,11 +8902,11 @@
       {
         "kind": "OBJECT",
         "name": "BCICustomerIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8922,7 +8922,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8934,7 +8934,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8953,11 +8953,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIRegisteredEndUserIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -8973,7 +8973,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8985,7 +8985,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9004,11 +9004,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIVisitorIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9024,7 +9024,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9040,7 +9040,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9063,11 +9063,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIServiceDeskPartnerIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9083,7 +9083,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9099,7 +9099,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9122,11 +9122,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIEMailContactCharValType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "characteristicName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9142,7 +9142,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9158,7 +9158,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9170,7 +9170,7 @@
           },
           {
             "name": "valueRange",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9189,11 +9189,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIEMailContactType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "EMailAddress",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9209,7 +9209,7 @@
           },
           {
             "name": "isPreferred",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -9221,7 +9221,7 @@
           },
           {
             "name": "isMarketingAllowed",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -9233,7 +9233,7 @@
           },
           {
             "name": "context",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9249,7 +9249,7 @@
           },
           {
             "name": "status",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9261,7 +9261,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9273,7 +9273,7 @@
           },
           {
             "name": "trustLevel",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9285,7 +9285,7 @@
           },
           {
             "name": "identifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9297,7 +9297,7 @@
           },
           {
             "name": "partyIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9313,7 +9313,7 @@
           },
           {
             "name": "charVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9336,11 +9336,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIGeographicAddressIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9356,7 +9356,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9372,7 +9372,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9395,11 +9395,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIPhoneContactCharValType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "characteristicName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9415,7 +9415,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9431,7 +9431,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9443,7 +9443,7 @@
           },
           {
             "name": "valueRange",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9462,11 +9462,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIPhoneContactType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "isPreferred",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -9478,7 +9478,7 @@
           },
           {
             "name": "isMarketingAllowed",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -9490,7 +9490,7 @@
           },
           {
             "name": "phoneNumber",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9506,7 +9506,7 @@
           },
           {
             "name": "type",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9518,7 +9518,7 @@
           },
           {
             "name": "context",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9534,7 +9534,7 @@
           },
           {
             "name": "status",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9546,7 +9546,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9558,7 +9558,7 @@
           },
           {
             "name": "trustLevel",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9570,7 +9570,7 @@
           },
           {
             "name": "identifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9582,7 +9582,7 @@
           },
           {
             "name": "partyIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9598,7 +9598,7 @@
           },
           {
             "name": "charVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9621,11 +9621,11 @@
       {
         "kind": "OBJECT",
         "name": "BCITelType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "nationalNumber",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9641,7 +9641,7 @@
           },
           {
             "name": "numberingPlan",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9653,7 +9653,7 @@
           },
           {
             "name": "countryPrefix",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9672,11 +9672,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIPostalContactCharValType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "characteristicName",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9692,7 +9692,7 @@
           },
           {
             "name": "value",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9708,7 +9708,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9720,7 +9720,7 @@
           },
           {
             "name": "valueRange",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9739,11 +9739,11 @@
       {
         "kind": "OBJECT",
         "name": "BCIPostalContactType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "isPreferred",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -9755,7 +9755,7 @@
           },
           {
             "name": "isMarketingAllowed",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -9767,7 +9767,7 @@
           },
           {
             "name": "context",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9783,7 +9783,7 @@
           },
           {
             "name": "status",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9795,7 +9795,7 @@
           },
           {
             "name": "validFor",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9807,7 +9807,7 @@
           },
           {
             "name": "trustLevel",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9819,7 +9819,7 @@
           },
           {
             "name": "identifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9835,7 +9835,7 @@
           },
           {
             "name": "partyIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9851,7 +9851,7 @@
           },
           {
             "name": "charVal",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "LIST",
@@ -9867,7 +9867,7 @@
           },
           {
             "name": "geographicAddressIdentifier",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9886,20 +9886,20 @@
       {
         "kind": "ENUM",
         "name": "CacheControlScope",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "PUBLIC",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "PRIVATE",
-            "description": null,
+            "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -9909,11 +9909,11 @@
       {
         "kind": "OBJECT",
         "name": "CompetenceIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9929,7 +9929,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9941,7 +9941,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -9960,12 +9960,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "ComplaintIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -9979,7 +9979,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -9989,7 +9989,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10005,12 +10005,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "CustomerIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10024,7 +10024,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10034,7 +10034,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10050,12 +10050,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "CustomerOrderIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10069,7 +10069,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10079,7 +10079,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10095,12 +10095,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "ExternalEmployeeIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10114,7 +10114,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10124,7 +10124,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10140,11 +10140,11 @@
       {
         "kind": "OBJECT",
         "name": "GeographicAddressIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10160,7 +10160,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10176,7 +10176,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10199,12 +10199,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "IncidentIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10218,7 +10218,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10228,7 +10228,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10244,12 +10244,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "InternalEmployeeIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10263,7 +10263,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10273,7 +10273,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10289,12 +10289,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "LeadIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10308,7 +10308,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10318,7 +10318,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10334,12 +10334,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "OrganisationIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10353,7 +10353,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10363,7 +10363,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10379,12 +10379,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "PersonIdentifierInputType",
-        "description": null,
+        "description": "",
         "fields": null,
         "inputFields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -10398,7 +10398,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10408,7 +10408,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "CodeValueInputType",
@@ -10424,11 +10424,11 @@
       {
         "kind": "OBJECT",
         "name": "PhysicalGoodIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10444,7 +10444,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -10456,7 +10456,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -10475,11 +10475,11 @@
       {
         "kind": "OBJECT",
         "name": "ProductSpecificationIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10495,7 +10495,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -10507,7 +10507,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -10536,11 +10536,11 @@
       {
         "kind": "OBJECT",
         "name": "WorkforceQueueIdentifierType",
-        "description": null,
+        "description": "",
         "fields": [
           {
             "name": "id",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10556,7 +10556,7 @@
           },
           {
             "name": "idScope",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10572,7 +10572,7 @@
           },
           {
             "name": "idContext",
-            "description": null,
+            "description": "",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -10596,7 +10596,7 @@
     "directives": [
       {
         "name": "cacheControl",
-        "description": null,
+        "description": "",
         "locations": [
           "FIELD_DEFINITION",
           "OBJECT",
@@ -10605,7 +10605,7 @@
         "args": [
           {
             "name": "maxAge",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "SCALAR",
               "name": "Int",
@@ -10615,7 +10615,7 @@
           },
           {
             "name": "scope",
-            "description": null,
+            "description": "",
             "type": {
               "kind": "ENUM",
               "name": "CacheControlScope",
