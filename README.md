@@ -1,27 +1,23 @@
-# Gqlclient
+# GraphQL
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+## Documents validation
 
-## Development server
+Run `npm run graphql:validate` to validate all the documents (queries, mutations and fragments)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Models generation
 
-## Code scaffolding
+As graphql is strongly typed, the typescript client application needs to update the models everytime it changes.
+Run `npm run graphql:generate` to generates the typescript types, download the schema and generate the fragment matchers.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Documents diff
 
-## Build
+If the models has changed, the first step is te check if our documents needs to be updated (cf Documents validation).
+If the validation fails, then run `npm run graphql:diff` to compare the schema downloaded during the last model generation with the actual schema.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Schema coverage
 
-## Running unit tests
+Run `npm run graphql:coverage` to find out how many times types and fields are used in your application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Visual representation of the Schema
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+https://apis.guru/graphql-voyager/ allow you to paste your schema and get a visual representation.
