@@ -1,0 +1,8 @@
+query fetchRequestById(
+  $requestId: RequestIdentifierInputType!
+  $customerLanguage: CustomerLanguage!
+) {
+  request(requestIdentifier: $requestId, customerLanguage: $customerLanguage) {
+    ...requestFields
+  }
+}

@@ -1,0 +1,17 @@
+mutation submitRequestActionItem(
+  $requestIdentifier: RequestIdentifierInputType!
+  $businessInteractionIdentifierItem: ChoiceBusinessInteractionIdentifierInputType!
+) {
+  submitRequestActionItem(
+    requestIdentifier: $requestIdentifier
+    businessInteractionIdentifierItem: $businessInteractionIdentifierItem
+  ) {
+    ...requestActionItemIdentifierFields
+  }
+}
+
+fragment requestActionItemIdentifierFields on RequestActionItemIdentifierType {
+  id
+  idScope{value}
+  idContext{value}
+}

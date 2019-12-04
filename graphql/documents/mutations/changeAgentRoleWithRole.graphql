@@ -1,0 +1,11 @@
+mutation changeAgentRoleWithRole(
+  $requestIdentifier: RequestIdentifierInputType!
+  $agentId: AgentIdentifierInputType!
+  $roleKind: RoleKind
+) {
+  changeAgentRole(
+    requestIdentifier: $requestIdentifier
+    agentId: $agentId
+    role: $roleKind
+  )
+}

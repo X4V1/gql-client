@@ -1,0 +1,86 @@
+fragment requestFields on RequestType {
+  identifier {
+    id
+  }
+  title
+  internalStatus {code {value}}
+  creationDate
+  contactReason {
+    domain {
+      value
+      valueDescription {defaultName}
+    },
+    productType {
+      value
+      valueDescription {defaultName}
+    },
+    contactReasonCode {
+      value
+      valueDescription {defaultName}
+    }
+  }
+  serviceLevel {
+    value
+  }
+  requestorDescription
+  role {
+    partyRoleIdentifier {
+      customerIdentifier {
+        id
+      }
+      internalEmployeeIdentifier {
+        id
+      }
+      externalEmployeeIdentifier {
+        id
+      }
+    }
+    name {
+      value
+      valueDescription {defaultName}
+    }
+  }
+  actionItem {
+    ...requestActionItemFields
+  }
+}
+
+fragment requestActionItemFields on RequestActionItemType {
+  status {
+    code {
+      value
+    }
+  }
+  identifier {
+    id
+  }
+  creationDate
+  businessInteractionIdentifierItem {
+   complaintIdentifier(unionIdentifierType: TYPE) {
+      ... on BCICaseType {
+        title{
+          defaultName
+        }
+        type {
+          value,
+          valueDescription {defaultName}
+        }
+        identifier {
+          id
+        }
+        description{
+          defaultName
+        }
+      }
+      ... on ComplaintIdentifierType {
+        id
+        idScope {
+          value
+        }
+        idContext {
+          value
+        }
+      }
+    }
+ }
+}

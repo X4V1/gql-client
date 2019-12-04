@@ -1,0 +1,1044 @@
+directive @cacheControl(maxAge: Int, scope: CacheControlScope) on FIELD_DEFINITION | OBJECT | INTERFACE
+
+input AgentIdentifierInputType {
+  partyKind: AgentKind!
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+enum AgentKind {
+  InternalEmployee
+  ExternalEmployee
+}
+
+type AmountType {
+  amount: Float!
+  unitOfMeasure: RQMCodeValueType!
+}
+
+type ApiVisibilityType {
+  originsPrefixes: String!
+  originRegexIntranet: String!
+}
+
+type ApplicationIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type AppointmentIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type AuditTrailType {
+  transaction: [TransactionType]!
+}
+
+type BCIApplicationIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCICaseCharValType {
+  name: String!
+  value: String!
+  valueRange: BCIIntervalType
+  validFor: BCITimeIntervalType
+}
+
+type BCICaseClassificationType {
+  classification: BCICodeValueType!
+}
+
+type BCICaseIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCICaseItemIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCICaseItemType {
+  identifier: [BCICaseItemIdentifierType]!
+}
+
+type BCICaseRelationshipType {
+  type: BCICodeValueType!
+}
+
+type BCICaseRoleType {
+  type: BCICodeValueType!
+  partyRole: [BCICaseRoleType]
+  organisationalUnitIdentifier: BCIOrganisationalUnitIdentifierType
+  contactMediumIdentifier: [BCIChoiceContactMediumIdentifierInCaseType]
+  logicalResourceIdentifier: [BCIChoiceLogicalResourceIdentifierInCaseType]
+}
+
+type BCICaseType {
+  targetResolutionTime: Date
+  targetTechnicalResolutionTime: Date
+  lastUpdateDate: Date
+  isClosedOnCreate: Date
+  isValid: Boolean
+  wasReopened: Boolean
+  interactionRole: [BCICaseRoleType]
+  type: BCICodeValueType!
+  status: BCIStatusType
+  priority: BCICodeValueType
+  title: BCINameType!
+  description: BCINameType
+  comment: [BCICommentType]
+  duration: BCITimeIntervalType!
+  closureCode: [BCICodeValueType]
+  communicationLanguage: BCILanguageCodeISOAlpha2Type
+  relationship: BCICaseRelationshipType
+  identifier: BCICaseIdentifierType!
+  item: [BCICaseItemType]
+  charVal: [BCICaseCharValType]
+  caseClassification: [BCICaseClassificationType]!
+  channelIdentifier: [BCIChoiceChannelIdentifierInCaseType]
+  assignedWorkforce: BCIChoiceAssignedWorkforceForCaseType
+}
+
+type BCIChannelIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIChoiceAssignedWorkforceForCaseType {
+  workforceQueueIdentifier: BCIWorkforceQueueIdentifierType!
+  employeeIdentifier: BCIEmployeeIdentifierType!
+}
+
+type BCIChoiceBusinessInteractionInCaseType {
+  opportunityIdentifier: BCIOpportunityIdentifierType!
+  customerProjectIdentifier: BCICustomerProjectIdentifierType!
+  taskIdentifier: BCITaskIdentifierType!
+  workOrderIdentifier: BCIWorkOrderIdentifierType!
+  provisioningOrderIdentifier: BCIProvisioningOrderIdentifierType!
+  caseIdentifier: BCICaseIdentifierType!
+  customerOrderIdentifier: BCICustomerOrderIdentifierType!
+}
+
+type BCIChoiceChannelIdentifierInCaseType {
+  channelIdentifier: BCIChannelIdentifierType!
+  salesChannelIdentifier: BCISalesChannelIdentifierType!
+}
+
+type BCIChoiceContactMediumIdentifierInCaseType {
+  EMailContactIdentifier: BCIEMailContactIdentifierType!
+  phoneContactIdentifier: BCIPhoneContactIdentifierType!
+  postalContactIdentifier: BCIPostalContactIdentifierType!
+}
+
+type BCIChoiceLogicalResourceIdentifierInCaseType {
+  applicationIdentifier: BCIApplicationIdentifierType!
+}
+
+type BCIChoicePartyIdentifierInPartyContactType {
+  personIdentifier: BCIPersonIdentifierType!
+  organisationIdentifier: BCIOrganisationIdentifierType!
+}
+
+type BCIChoicePartyRoleInCaseType {
+  employeeIdentifier: BCIEmployeeIdentifierType!
+  customerIdentifier: BCICustomerIdentifierType!
+  registeredEndUserIdentifier: BCIRegisteredEndUserIdentifierType!
+  visitorIdentifier: BCIVisitorIdentifierType!
+  serviceDeskPartnerIdentifier: BCIServiceDeskPartnerIdentifierType!
+}
+
+type BciClientType {
+  bciUrl: String!
+  timeoutInMillis: Int!
+}
+
+type BCICodeValueType {
+  codeSystem: String
+  codeSystemVersion: String
+  codeDescription: String
+  value: String!
+  context: String
+  valueDescription: BCINameType
+}
+
+type BCICommentType {
+  comment: String!
+  language: BCILanguageCodeISOAlpha2Type!
+  type: BCICodeValueType!
+}
+
+type BCICustomerIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCICustomerOrderIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCICustomerProjectIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIEMailContactCharValType {
+  characteristicName: String!
+  value: String!
+  validFor: BCITimeIntervalType
+  valueRange: BCIIntervalType
+}
+
+type BCIEMailContactIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCIEMailContactType {
+  EMailAddress: String!
+  isPreferred: Boolean
+  isMarketingAllowed: Boolean
+  context: [BCICodeValueType]
+  status: BCICodeValueType
+  validFor: BCITimeIntervalType
+  trustLevel: BCICodeValueType
+  identifier: BCIEMailContactIdentifierType
+  partyIdentifier: [BCIChoicePartyIdentifierInPartyContactType]
+  charVal: [BCIEMailContactCharValType]
+}
+
+type BCIEmployeeIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCIGeographicAddressIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIIntervalType {
+  low: String!
+  high: String!
+}
+
+type BCILabelType {
+  text: String
+  language: BCILanguageCodeISOAlpha2Type!
+}
+
+type BCILanguageCodeISOAlpha2Type {
+  alpha2Code: String!
+  idScope: BCICodeValueType
+}
+
+type BCINameType {
+  defaultName: String!
+  type: BCICodeValueType
+  languageName: [BCILabelType]
+}
+
+type BCIOpportunityIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIOrganisationalUnitIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIOrganisationIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCIPersonIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType!
+}
+
+type BCIPhoneContactCharValType {
+  characteristicName: String!
+  value: String!
+  validFor: BCITimeIntervalType
+  valueRange: BCIIntervalType
+}
+
+type BCIPhoneContactIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCIPhoneContactType {
+  isPreferred: Boolean
+  isMarketingAllowed: Boolean
+  phoneNumber: BCITelType!
+  type: BCICodeValueType
+  context: [BCICodeValueType]
+  status: BCICodeValueType
+  validFor: BCITimeIntervalType
+  trustLevel: BCICodeValueType
+  identifier: BCIPhoneContactIdentifierType
+  partyIdentifier: [BCIChoicePartyIdentifierInPartyContactType]
+  charVal: [BCIPhoneContactCharValType]
+}
+
+type BCIPostalContactCharValType {
+  characteristicName: String!
+  value: String!
+  validFor: BCITimeIntervalType
+  valueRange: BCIIntervalType
+}
+
+type BCIPostalContactIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCIPostalContactType {
+  isPreferred: Boolean
+  isMarketingAllowed: Boolean
+  context: [BCICodeValueType]
+  status: BCICodeValueType
+  validFor: BCITimeIntervalType
+  trustLevel: BCICodeValueType
+  identifier: BCIPostalContactIdentifierType!
+  partyIdentifier: [BCIChoicePartyIdentifierInPartyContactType]
+  charVal: [BCIPostalContactCharValType]
+  geographicAddressIdentifier: BCIGeographicAddressIdentifierType
+}
+
+type BCIProvisioningOrderIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCIRegisteredEndUserIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BCISalesChannelIdentifierType {
+  id: String!
+  idContext: BCICodeValueType
+  idScope: BCICodeValueType
+}
+
+type BCIServiceDeskPartnerIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIStatusType {
+  code: BCICodeValueType!
+  description: BCINameType
+  reason: [BCICodeValueType]
+  validFor: BCITimeIntervalType
+}
+
+type BCITaskIdentifierType {
+  noop: String
+}
+
+type BCITelType {
+  nationalNumber: String!
+  numberingPlan: BCICodeValueType
+  countryPrefix: BCICodeValueType
+}
+
+type BCITimeIntervalType {
+  startTimeStamp: Date!
+  endTimeStamp: Date
+}
+
+type BCIVisitorIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIWorkforceQueueIdentifierType {
+  id: String!
+  idScope: BCICodeValueType!
+  idContext: BCICodeValueType!
+}
+
+type BCIWorkOrderIdentifierType {
+  id: String!
+  idScope: BCICodeValueType
+  idContext: BCICodeValueType
+}
+
+type BillingDocumentIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+type BusinessCommunicationIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+enum BusinessInteractionKind {
+  CustomerOrder
+  Incident
+  Complaint
+  Lead
+}
+
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
+type ChannelIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+type CharacteristicValueType {
+  characteristicName: String!
+  characteristicDescription: String
+  value: String
+  valueRange: IntervalType
+  unitOfMeasure: RQMCodeValueType
+  valueDescription: String
+  validFor: TimeIntervalType
+  subCharVal: [CharacteristicValueType]
+}
+
+type ChoiceBillingDocumentIdentifierInRequestType {
+  invoiceBillingDocumentIdentifier: BillingDocumentIdentifierType
+  creditNoteBillingDocumentIdentifier: BillingDocumentIdentifierType
+  billingDocumentIdentifier: BillingDocumentIdentifierType
+}
+
+input ChoiceBusinessInteractionIdentifierInputType {
+  businessInteractionKind: BusinessInteractionKind!
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type ChoiceBusinessInteractionIdentifierItemInRequestType {
+  customerOrderIdentifier: CustomerOrderIdentifierType
+  incidentIdentifier: IncidentIdentifierType
+  complaintIdentifier(unionIdentifierType: UnionIdentifierType = IDENTIFIER): ComplaintIdentifierUnion
+  leadIdentifier: LeadIdentifierType
+}
+
+input ChoicePartyIdentifierInputType {
+  partyKind: PartyKind!
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type ChoicePartyRoleIdentifierInDataManagementType {
+  employeeIdentifier: EmployeeIdentifierType
+  registeredEndUserIdentifier: RegisteredEndUserIdentifierType
+}
+
+type ChoicePartyRoleIdentifierInRequestType {
+  internalEmployeeIdentifier: InternalEmployeeIdentifierType
+  partnerEmployeeIdentifier: PartnerEmployeeIdentifierType
+  organisationIdentifier: OrganisationIdentifierType
+  customerIdentifier: CustomerIdentifierType
+  personIdentifier: PersonIdentifierType
+  organisationalUnitIdentifier: OrganisationalUnitIdentifierType
+  externalEmployeeIdentifier: ExternalEmployeeIdentifierType
+  registeredEndUserIdentifier: RegisteredEndUserIdentifierType
+  contactIdentifier: ContactIdentifierType
+}
+
+input CodeValueInputType {
+  codeSystem: String
+  codeSystemVersion: String
+  codeDescription: String
+  value: String!
+  context: String
+  valueDescription: NameInputType
+}
+
+type CommentType {
+  comment: String!
+  language: LanguageCodeIsoAlpha2Type!
+  type: RQMCodeValueType!
+  subject: [RQMCodeValueType]
+}
+
+type CompetenceIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+input ComplaintIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type ComplaintIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+union ComplaintIdentifierUnion = ComplaintIdentifierType | BCICaseType
+
+type ConfigurationType {
+  environment: String!
+  logging: LoggingType!
+  express: ExpressType!
+  graphQL: GraphQLType!
+  rqmClient: RqmClientType!
+  bciClient: BciClientType!
+  securityLayer: SecurityType!
+}
+
+type ContactIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+input CustomerIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type CustomerIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+enum CustomerLanguage {
+  FR
+  NL
+  DE
+}
+
+input CustomerOrderIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type CustomerOrderIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+scalar Date
+
+type EmployeeIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type ExpressType {
+  bodyLimit: String
+}
+
+input ExternalEmployeeIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type ExternalEmployeeIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+input FilterRequestActionInputType {
+  requestActionItemId: RequestActionItemIdentifierInputType
+  customerLanguage: CustomerLanguage
+}
+
+input FilterRequestInputType {
+  requestId: RequestIdentifierInputType
+  customerLanguage: CustomerLanguage
+}
+
+enum FormatType {
+  readable
+  fluentd
+}
+
+type GeographicAddressIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+type GraphQLType {
+  graphQLPort: Int!
+  graphQLDebug: Boolean
+  graphQLTracing: Boolean
+  graphQLIntrospection: Boolean
+  graphQLPlayground: Boolean
+  graphiQLPort: Int!
+}
+
+type HealthDetailsType {
+  graphQL: HealthStatusType!
+  graphiQL: HealthStatusType!
+  bciCase: HealthStatusType!
+  requestEntityService: HealthStatusType!
+  requestOrchestratedTaskService: HealthStatusType!
+  requestActionItemOrchestratedTaskService: HealthStatusType!
+}
+
+enum HealthStatusType {
+  UP
+  DOWN
+}
+
+type HealthType {
+  status: HealthStatusType!
+  details: HealthDetailsType
+}
+
+type IdentityType {
+  msVersion: String!
+  hostPort: Int!
+  hostName: String!
+  clusterName: String
+  serverName: String!
+  dateTime: Date!
+  message: String!
+  environment: String!
+}
+
+input IncidentIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type IncidentIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type InstallmentPlanIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+input InternalEmployeeIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type InternalEmployeeIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type IntervalType {
+  low: String!
+  high: String!
+}
+
+input LabelInputType {
+  text: String
+  language: LanguageCodeIsoAlpha2InputType!
+}
+
+input LanguageCodeIsoAlpha2InputType {
+  alpha2Code: String!
+  idScope: CodeValueInputType
+}
+
+type LanguageCodeIsoAlpha2Type {
+  alpha2Code: String!
+  idScope: RQMCodeValueType
+}
+
+input LeadIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type LeadIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+type LoggingType {
+  transports(type: TransportEnumType): [TransportType]!
+}
+
+type MetadataType {
+  auditTrail: AuditTrailType
+}
+
+type Mutation {
+  submitRequest(partyIdentifier: ChoicePartyIdentifierInputType!, requestorDescription: String!, type: CodeValueInputType = {value: "TEC"}, serviceLevel: CodeValueInputType = {value: "1"}, contactReason: RequestContactReasonInputType, requestorLanguage: LanguageCodeIsoAlpha2InputType): [RequestIdentifierType!]!
+  changeAgentRole(requestIdentifier: RequestIdentifierInputType!, agentId: AgentIdentifierInputType!, role: RoleKind = AssignedTo): Boolean
+  submitRequestActionItem(requestIdentifier: RequestIdentifierInputType!, businessInteractionIdentifierItem: ChoiceBusinessInteractionIdentifierInputType!): [RequestActionItemIdentifierType!]!
+  closeRequestActionItem(requestActionItemIdentifier: RequestActionItemIdentifierInputType!): Boolean
+  reSeed: Boolean
+}
+
+input NameInputType {
+  defaultName: String!
+  type: CodeValueInputType
+  languageName: [LabelInputType]
+}
+
+type OrganisationalUnitIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+input OrganisationIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type OrganisationIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type PageInfo {
+  endCursor: String
+  hasNextPage: Boolean!
+}
+
+input PaginationInputType {
+  after: String
+  first: Int = 5
+}
+
+type PartnerEmployeeIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+enum PartyKind {
+  Organisation
+  Customer
+  Person
+}
+
+input PersonIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType
+  idContext: CodeValueInputType
+}
+
+type PersonIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type PhysicalGoodIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type ProductSpecificationIdentifierType {
+  id: String!
+  idContext: RQMCodeValueType
+  idScope: RQMCodeValueType
+}
+
+type PromiseToPayIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type Query {
+  identity: IdentityType
+  ready: Boolean
+  health: HealthType
+  config: ConfigurationType!
+  requests(filter: FilterRequestInputType, pagination: PaginationInputType = {first: 5}, sorting: RequestOrderBy): RequestPageResultCursor!
+  requestActionItems(filter: FilterRequestActionInputType, pagination: PaginationInputType, sorting: RequestActionItemOrderBy): RequestActionItemPageResultCursor!
+  request(requestIdentifier: RequestIdentifierInputType!, customerLanguage: CustomerLanguage!): RequestType
+  requestActionItem(requestActionItemIdentifier: RequestActionItemIdentifierInputType!): RequestActionItemType
+}
+
+type RegisteredEndUserIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType
+  idContext: RQMCodeValueType
+}
+
+type RequestActionItemEdge {
+  cursor: String!
+  node: RequestActionItemType!
+}
+
+input RequestActionItemIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType = {value: "ENT"}
+  idContext: CodeValueInputType = {value: "RQM"}
+}
+
+type RequestActionItemIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+enum RequestActionItemOrderBy {
+  ID_ASC
+  ID_DESC
+}
+
+type RequestActionItemPageResultCursor {
+  edges: [RequestActionItemEdge]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type RequestActionItemType {
+  status: StatusType!
+  identifier: [RequestActionItemIdentifierType]!
+  description: [String]
+  planActionDate: Date
+  creationDate: Date
+  lastChangeDate: Date
+  businessInteractionIdentifierItem: ChoiceBusinessInteractionIdentifierItemInRequestType
+}
+
+input RequestContactReasonInputType {
+  domain: CodeValueInputType
+  productType: CodeValueInputType
+  contactReasonCode: CodeValueInputType
+}
+
+type RequestContactReasonType {
+  domain: RQMCodeValueType
+  productType: RQMCodeValueType
+  contactReasonCode: RQMCodeValueType
+}
+
+type RequestEdge {
+  cursor: String!
+  node: RequestType!
+}
+
+input RequestIdentifierInputType {
+  id: ID!
+  idScope: CodeValueInputType = {value: "ENT"}
+  idContext: CodeValueInputType = {value: "RQM"}
+}
+
+type RequestIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
+
+type RequestNonValidRequestorInputType {
+  charVal: [CharacteristicValueType]
+}
+
+enum RequestOrderBy {
+  ID_ASC
+  ID_DESC
+}
+
+type RequestPageResultCursor {
+  edges: [RequestEdge]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type RequestRelationshipType {
+  name: RQMCodeValueType!
+  requestIdentifier: [RequestIdentifierType]
+}
+
+type RequestResolutionType {
+  code: RQMCodeValueType!
+  detail: [RQMCodeValueType]
+  resolvedByBillingDocumentIdentifier: [ChoiceBillingDocumentIdentifierInRequestType]
+  promiseToPayIdentifier: PromiseToPayIdentifierType
+  installmentPlanIdentifier: InstallmentPlanIdentifierType
+  requestRootCause: RequestRootCauseType
+  attachmentPath: [String]
+}
+
+type RequestRoleType {
+  partyRoleIdentifier: ChoicePartyRoleIdentifierInRequestType!
+  name: RQMCodeValueType!
+}
+
+type RequestRootCauseType {
+  code: RQMCodeValueType
+  detail: [String]
+}
+
+type RequestType {
+  title: String!
+  type: RQMCodeValueType!
+  serviceLevel: RQMCodeValueType!
+  requestorDescription: String
+  requestorExpectation: String
+  estimatedResolutionDate: Date!
+  requestorComment: [CommentType]
+  internalComment: [CommentType]
+  numberOfTimesReopened: Int!
+  role(roleKind: RoleKind): [RequestRoleType]!
+  identifier: [RequestIdentifierType]!
+  relationship: [RequestRelationshipType]
+  charVal: [CharacteristicValueType]
+  preferredChannelIdentifier: ChannelIdentifierType
+  resolution: [RequestResolutionType]
+  internalStatus: StatusType!
+  actionItem: [RequestActionItemType]
+  externalStatus: StatusType!
+  contactReason: RequestContactReasonType
+  creationDate: Date!
+  metadata: MetadataType
+  createdFromBusinessCommunicationIdentifier: BusinessCommunicationIdentifierType!
+  attachmentPath: [String]
+  nonValidRequestorInputCharVal: RequestNonValidRequestorInputType
+  requestorLanguage: LanguageCodeIsoAlpha2Type
+}
+
+enum RoleKind {
+  AssignedTo
+  RequestOwner
+  RequestedFor
+}
+
+type RqmClientType {
+  esUrl: String!
+  otsUrl: String!
+  otsRequestActionItemUrl: String!
+  timeoutInMillis: Int!
+}
+
+type RQMCodeValueType {
+  codeSystem: String
+  codeSystemVersion: String
+  codeDescription: String
+  value: String!
+  context: String
+  valueDescription: RQMNameType
+}
+
+type RQMLabelType {
+  text: String
+  language: LanguageCodeIsoAlpha2Type!
+}
+
+type RQMNameType {
+  defaultName: String!
+  type: RQMCodeValueType
+  languageName: [RQMLabelType]
+}
+
+type SecurityType {
+  enabled: Boolean!
+  apiVisibility: ApiVisibilityType
+}
+
+type StatusType {
+  code: RQMCodeValueType!
+  description: String
+  reason: [RQMCodeValueType]
+  comment: [CommentType]
+  validFor: TimeIntervalType
+}
+
+type TimeIntervalType {
+  startTimeStamp: Date!
+  endTimeStamp: Date!
+}
+
+type TransactionType {
+  type: RQMCodeValueType!
+  date: Date!
+  reason: [String]
+  applicationIdentifier: ApplicationIdentifierType
+  committedBy: ChoicePartyRoleIdentifierInDataManagementType
+}
+
+enum TransportEnumType {
+  File
+  Console
+}
+
+type TransportType {
+  enabled: Boolean!
+  minLevel: String!
+  transport: TransportEnumType!
+  format: FormatType
+  fileName: String
+  dirName: String
+  maxFiles: String
+  maxSize: String
+  zippedArchive: Boolean
+}
+
+enum UnionIdentifierType {
+  IDENTIFIER
+  TYPE
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
+
+type WorkforceQueueIdentifierType {
+  id: String!
+  idScope: RQMCodeValueType!
+  idContext: RQMCodeValueType!
+}
