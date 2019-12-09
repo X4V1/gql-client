@@ -1405,6 +1405,17 @@ export type RequestActionItemIdentifierFieldsFragment = (
   ) }
 );
 
+export type GetConfigQueryVariables = {};
+
+
+export type GetConfigQuery = (
+  { __typename?: 'Query' }
+  & { config: (
+    { __typename?: 'ConfigurationType' }
+    & Pick<ConfigurationType, 'environment'>
+  ) }
+);
+
 export type FetchRequestByIdQueryVariables = {
   requestId: RequestIdentifierInputType,
   customerLanguage: CustomerLanguage
@@ -1559,6 +1570,21 @@ export const SubmitRequestActionItemDocument = gql`
   })
   export class SubmitRequestActionItemGQL extends Apollo.Mutation<SubmitRequestActionItemMutation, SubmitRequestActionItemMutationVariables> {
     document = SubmitRequestActionItemDocument;
+    
+  }
+export const GetConfigDocument = gql`
+    query getConfig {
+  config {
+    environment
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class GetConfigGQL extends Apollo.Query<GetConfigQuery, GetConfigQueryVariables> {
+    document = GetConfigDocument;
     
   }
 export const FetchRequestByIdDocument = gql`

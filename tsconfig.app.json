@@ -2,7 +2,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "lib": [
+      "es2017",
+      "es2016",
+      "dom",
+      "esnext.asynciterable"
+    ]
   },
   "files": [
     "src/main.ts",

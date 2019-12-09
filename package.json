@@ -8,11 +8,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "graphql:coverage": "graphql-inspector coverage './graphql/documents/**/*.graphql' http://localhost:4600/graphiql/",
-    "graphql:validate": "graphql-inspector validate './graphql/documents/**/*.graphql' http://localhost:4600/graphiql/",
-    "graphql:generate": "graphql-codegen --config codegen.yml",
-    "graphql:diff": "graphql-inspector diff ./graphql/generated/schema.graphql http://localhost:4600/graphiql",
-    "graphql:serve": "graphql-inspector serve ./graphql/generated/schema.graphql"
+    "graphql:coverage": "graphql-inspector coverage 'src/app/graphql/documents/**/*.graphql' http://localhost:4600/graphiql/",
+    "graphql:validate": "graphql-inspector validate 'src/app/graphql/documents/**/*.graphql' http://localhost:4600/graphiql/",
+    "graphql:generate": "graphql-codegen --config codegen.yml && npm run graphql:register",
+    "graphql:diff": "graphql-inspector diff ./src/app/graphql/generated/schema.graphql http://localhost:4600/graphiql",
+    "graphql:serve": "graphql-inspector serve ./src/app/graphql/generated/schema.graphql",
+    "graphql:register": "node ./scripts/register-graphql-services-in-module.js",
+    "graphql:compile-script": "tsc ./scripts/register-graphql-services-in-module.ts --outDir ./scripts --lib esnext"
   },
   "private": true,
   "dependencies": {
@@ -24,9 +26,16 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "apollo-angular": "^1.8.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "apollo-angular-link-http": "^1.9.0",
+    "apollo-link": "^1.2.11",
+    "apollo-client": "^2.6.0",
+    "apollo-cache-inmemory": "^1.6.0",
+    "graphql-tag": "^2.10.0",
+    "graphql": "^14.5.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.19",
