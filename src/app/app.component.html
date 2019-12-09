@@ -1,11 +1,12 @@
 <h2>GraphQL Client</h2>
 
-<button (click)="fetchConfig()">Call GraphQL API</button>
-
 <section>
-  <p><span class="bold">Data</span>: {{data | json}}</p>
-  <p><span class="bold">Loading</span>: {{loading | json}}</p>
-  <p><span class="bold">Errors</span>: {{errors | json}}</p>
+  <button (click)="fetch()">Call GraphQL API</button>
+  <button (click)="clear()">Clear</button>
+</section>
+
+<section *ngIf="(response$ | async); let data">
+  <p>{{ data }}</p>
 </section>
 
 <router-outlet></router-outlet>

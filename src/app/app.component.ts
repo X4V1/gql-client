@@ -1,29 +1,43 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {GetConfigGQL, GetConfigQuery} from './graphql/generated/graphql';
 import {ApolloQueryResult} from 'apollo-client';
-import {GraphQLError} from 'graphql';
+import {catchError, filter, map, pluck, share, take, tap} from 'rxjs/operators';
+import {merge, Observable, of} from 'rxjs';
+import {stringify} from 'flatted/esm';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  errors: ReadonlyArray<GraphQLError>;
-  loading: boolean;
-  data: GetConfigQuery;
+export class AppComponent {
+  response$: Observable<string>;
 
   constructor(private getConfigGQL: GetConfigGQL) {
   }
 
-  ngOnInit() {
+  fetch() {
+    const data$: Observable<ApolloQueryResult<GetConfigQuery>> = this.getConfigGQL.fetch().pipe(share());
+
+    const errors$ = data$.pipe(
+      take(1),
+      pluck('errors'),
+      filter(r => !!r),
+      map(e => 'Errors: ' + stringify(e)),
+      catchError(e => of('Error not related to GraphQL: ' + e))
+    );
+
+    const environment$ = data$.pipe(
+      take(1),
+      pluck('data'),
+      filter(r => !!r),
+      map(d => 'Environment: ' + d.config.environment)
+    );
+
+    this.response$ = merge(errors$, environment$);
   }
 
-  fetchConfig () {
-    this.getConfigGQL.fetch().subscribe((result: ApolloQueryResult<GetConfigQuery>) => {
-      this.errors = result.errors;
-      this.loading = result.loading;
-      this.data = result.data;
-    });
+  clear() {
+    delete this.response$;
   }
 }
