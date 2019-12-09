@@ -17,6 +17,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  fetchConfig () {
     this.getConfigGQL.fetch().subscribe((result: ApolloQueryResult<GetConfigQuery>) => {
       this.errors = result.errors;
       this.loading = result.loading;

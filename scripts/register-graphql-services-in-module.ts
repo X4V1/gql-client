@@ -4,7 +4,7 @@ const path = require('path');
 const rootDir = require('app-root-path');
 
 const generatedFilePath = path.resolve(rootDir.toString(), 'src/app/graphql/generated/graphql.ts');
-const modulePath = path.resolve(rootDir.toString(), 'src/app/graphql/services/graphql-services.module.ts');
+const modulePath = path.resolve(rootDir.toString(), 'src/app/graphql/generated/graphql-services.module.ts');
 
 const regexToExtractServiceNames = /export\s*class\s*([a-zA-Z0-9]*)\s*extends\s*Apollo\./;
 
@@ -55,7 +55,7 @@ const findServicesNames = (data: string): string[] => {
 const registerServicesInGraphQLModule = (servicesNames: string[]): void => {
   let newModule = emptyModule;
   const services = servicesNames.join(', ');
-  const imports = `import { ${services} } from './../generated/graphql';`;
+  const imports = `import { ${services} } from './graphql';`;
   newModule = newModule.replace(/GENERATED_SERVICE_IMPORT/, imports);
   newModule = newModule.replace(/GENERATED_SERVICE_DECLARATION/, services);
   saveFile(modulePath, newModule);

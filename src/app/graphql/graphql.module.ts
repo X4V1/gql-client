@@ -3,7 +3,7 @@ import {ApolloModule, APOLLO_OPTIONS} from 'apollo-angular';
 import {HttpLinkModule, HttpLink} from 'apollo-angular-link-http';
 import {InMemoryCache, IntrospectionFragmentMatcher} from 'apollo-cache-inmemory';
 import introspectionResult from './generated/fragment-matcher-introspection';
-import {GraphQLServices} from './services/graphql-services.module';
+import {GraphQLServices} from './generated/graphql-services.module';
 
 const generatedServices = [];
 

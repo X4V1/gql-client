@@ -1,3 +1,11 @@
-GraphQL Client
+<h2>GraphQL Client</h2>
+
+<button (click)="fetchConfig()">Call GraphQL API</button>
+
+<section>
+  <p><span class="bold">Data</span>: {{data | json}}</p>
+  <p><span class="bold">Loading</span>: {{loading | json}}</p>
+  <p><span class="bold">Errors</span>: {{errors | json}}</p>
+</section>
 
 <router-outlet></router-outlet>
